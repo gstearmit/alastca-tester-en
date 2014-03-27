@@ -29,3 +29,9 @@ min-height: 1px;
 padding-right: 15px;
 padding-left: 15px;
 }
+
+.btn-group>.btn+.dropdown-toggle {
+height: 30px;}
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+margin-top: 0px;
+}
