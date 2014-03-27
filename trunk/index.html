@@ -10,6 +10,10 @@
 <!-- Le styles -->
 <link href="css/bootstrap-combined.min.css" rel="stylesheet">
 <link href="css/layoutit.css" rel="stylesheet">
+<link href="css/layoutalatca.css" rel="stylesheet">
+<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -341,7 +345,7 @@
               </div>
             </div>
             <div class="box box-element ui-draggable">
-				<a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> remove</a>
+				<a href="#close" class="remove label label-danger"><i class="icon-remove icon-white"></i></i>Delete</a>
 				<span class="drag label label-default"><i class="icon-move"></i>drag</span>
 				<span class="configuration"></span>
 				<div class="preview">Horizontal Form</div>
@@ -377,27 +381,27 @@
 				</div>
 			</div>
 			<div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span> <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal"><font>Edit content</font></button> <a class="btn btn-mini" href="#" rel="form-inline"><font>inline</font></a> </span>
-              <div class="preview"><font><font>Hộp tìm kiếm</font></font></div>
+              <div class="preview"><font>Search box</font></div>
               <div class="view">
                 <form class="form-search">
                   <input class="input-medium search-query" type="text">
-                  <button type="submit" class="btn" contenteditable="true"><font><font>Tìm</font></font></button>
+                  <button type="submit" class="btn" contenteditable="true"><font>Search</font></button>
                 </form>
               </div>
             </div>
             <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span> <span class="configuration"> </span>
               <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal"><font>Edit content</font></button></span>
-              <div class="preview"><font><font>Hình thức theo chiều dọc</font></font></div>
+              <div class="preview"><font>sign in</font></div>
               <div class="view">
                 <form class="form-horizontal">
                   <div class="control-group">
-                    <label class="control-label" for="inputEmail" contenteditable="true"><font><font>Hộp thư</font></font></label>
+                    <label class="control-label" for="inputEmail" contenteditable="true"><font>Email</font></label>
                     <div class="controls">
                       <input id="inputEmail" placeholder="Email" type="text">
                     </div>
                   </div>
                   <div class="control-group">
-                    <label class="control-label" for="inputPassword" contenteditable="true"><font><font>Mật khẩu</font></font></label>
+                    <label class="control-label" for="inputPassword" contenteditable="true"><font>Password</font></label>
                     <div class="controls">
                       <input id="inputPassword" placeholder="Password" type="password">
                     </div>
@@ -405,47 +409,57 @@
                   <div class="control-group">
                     <div class="controls">
                       <label class="checkbox" contenteditable="true">
-                        <input type="checkbox"><font><font>
-                        Ghi nhớ tôi </font></font></label>
-                      <button type="submit" class="btn" contenteditable="true"><font>Đăng nhập</font></button>
+                        <input type="checkbox"><font>Remember me</font></label>
+                      <button type="submit" class="btn" contenteditable="true"><font>sign in</font></button>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span> <span class="configuration"> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font><font>phong cách</font></font><span class="caret"></span></a>
+            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span>
+			<span class="configuration"> 
+			<button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal"><font>Edit content</font></button>
+			<span class="btn-group"> 
+			<a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font>Style</font><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="active"><a href="#" rel=""><font>Default</font></a></li>
-                <li class=""><a href="#" rel="btn-primary"><font><font>Nhấn mạnh</font></font></a></li>
-                <li class=""><a href="#" rel="btn-info"><font><font>Thông tin</font></font></a></li>
-                <li class=""><a href="#" rel="btn-success"><font><font>Thành công</font></font></a></li>
-                <li class=""><a href="#" rel="btn-warning"><font><font>Nhắc nhở</font></font></a></li>
-                <li class=""><a href="#" rel="btn-danger"><font><font>Nguy hiểm</font></font></a></li>
-                <li class=""><a href="#" rel="btn-inverse"><font><font>Sự trở lại</font></font></a></li>
-                <li class=""><a href="#" rel="btn-link"><font><font>Liên kết</font></font></a></li>
+                <li class=""><a href="#" rel="btn-primary"><font>primary</font></a></li>
+                <li class=""><a href="#" rel="btn-info"><font>info</font></a></li>
+                <li class=""><a href="#" rel="btn-success"><font>success</font></a></li>
+                <li class=""><a href="#" rel="btn-warning"><font>warning</font></a></li>
+                <li class=""><a href="#" rel="btn-danger"><font>danger</font></a></li>
+                <li class=""><a href="#" rel="btn-inverse"><font>inverse</font></a></li>
+                <li class=""><a href="#" rel="btn-link"><font>link</font></a></li>
               </ul>
-              </span> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font><font>Kích thước </font></font><span class="caret"></span></a>
+			  
+              </span> 
+			  <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font>Size</font><span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li class=""><a href="#" rel="btn-large"><font><font>To</font></font></a></li>
-                <li class="active"><a href="#" rel=""><font><font>Trong</font></font></a></li>
-                <li class=""><a href="#" rel="btn-small"><font><font>Nhỏ</font></font></a></li>
-                <li class=""><a href="#" rel="btn-mini"><font><font>Thu nhỏ</font></font></a></li>
+                <li class=""><a href="#" rel="btn-large"><font>large</font></a></li>
+                <li class="active"><a href="#" rel=""><font>active</font></a></li>
+                <li class=""><a href="#" rel="btn-small"><font>small</font></a></li>
+                <li class=""><a href="#" rel="btn-mini"><font>mini</font></a></li>
               </ul>
-              </span> <a class="btn btn-mini" href="#" rel="btn-block"><font><font>Bảng quảng cáo </font></font></a> <a class="btn btn-mini" href="#" rel="disabled"><font><font>vô hiệu hóa</font></font></a> </span>
-              <div class="preview"><font><font>Bấm chuông</font></font></div>
+              </span> 
+			  <a class="btn btn-mini" href="#" rel="btn-block"><font>block</font></a> <a class="btn btn-mini" href="#" rel="disabled"><font>disabled</font></a> </span>
+             
+
+			 <div class="preview">
+			 <font>Button</font></div>
+			  
               <div class="view">
-                <button class="btn" type="button" contenteditable="true"><font><font>Bấm chuông</font></font></button>
+                <button class="btn" type="button" contenteditable="true"><font>button</font></button>
               </div>
             </div>
-            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span> <span class="configuration"> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font><font>phong cách</font></font><span class="caret"></span></a>
+            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>Drag </font></span> <span class="configuration"> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font>Style</font><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="active"><a href="#" rel=""><font>Default</font></a></li>
-                <li class=""><a href="#" rel="img-rounded"><font><font>Bo tròn góc</font></font></a></li>
-                <li class=""><a href="#" rel="img-circle"><font><font>Vòng tròn</font></font></a></li>
-                <li class=""><a href="#" rel="img-polaroid"><font><font>Khung</font></font></a></li>
+                <li class=""><a href="#" rel="img-rounded"><font>rounded</font></a></li>
+                <li class=""><a href="#" rel="img-circle"><font>circle</font></a></li>
+                <li class=""><a href="#" rel="img-polaroid"><font>Thumbnail</font></a></li>
               </ul>
               </span> </span>
-              <div class="preview"><font><font>Phim</font></font></div>
+              <div class="preview"><font>Images</font></div>
               <div class="view"> <img alt="140x140" src="img/a.jpg"> </div>
             </div>
           </li>
@@ -667,7 +681,7 @@
                 </ul>
               </div>
             </div>
-            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span> <span class="configuration"> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font><font>phong cách</font></font><span class="caret"></span></a>
+            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span> <span class="configuration"> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font>Style</font><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="active"><a href="#" rel=""><font>Default</font></a></li>
                 <li class=""><a href="#" rel="progress-info"><font><font>Nhanh chóng</font></font></a></li>
@@ -800,7 +814,7 @@
                 </div>
               </div>
             </div>
-            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span> <span class="configuration"> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font><font>phong cách</font></font><span class="caret"></span></a>
+            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i><font>Delete</font></a> <span class="drag label"><i class="icon-move"></i><font>drag</font></span> <span class="configuration"> <span class="btn-group"> <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#"><font>Style</font><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="active"><a href="#" rel=""><font>Default</font></a></li>
                 <li class=""><a href="#" rel="alert-info"><font><font>Nhanh chóng</font></font></a></li>
