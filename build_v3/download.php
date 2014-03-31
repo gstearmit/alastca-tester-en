@@ -5,7 +5,6 @@ if ($check_post) {
 }else $content = '';
 
 $local_file = dirname(__FILE__) . '\zip\index.html';
-return var_dump($local_file);
 
 $content_file1 = "<html class=\"translated-ltr \">
 <head>
@@ -120,6 +119,8 @@ if ($download_file)
     header("Content-Transfer-Encoding: binary");
     header("Content-Length: " . filesize($zip_file_name));
     readfile($zip_file_name);
+    // remove zip file from temp path
+   // unlink($zip_file_name);
 
 }
 

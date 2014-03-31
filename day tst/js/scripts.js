@@ -343,7 +343,7 @@ $(document).ready(function() {
 	CKEDITOR.disableAutoInline = true;
 	restoreData();
 	var contenthandle = CKEDITOR.replace( 'contenteditor' ,{
-		language: 'vi',
+		language: 'en',
 		contentsCss: ['css/bootstrap-combined.min.css'],
 		allowedContent: true
 	});
