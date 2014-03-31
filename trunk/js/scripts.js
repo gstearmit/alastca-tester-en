@@ -45,28 +45,27 @@ function saveLayout(){
 }
 
       function downloadLayout(){
-			alert('download');
 			$.ajax({  
 				type: "POST",  
 				contentType: "application/x-www-form-urlencoded;charset=utf-8",
-				url: "http://alatca.test:2047/build_v3/download.php",  
+				url: "http://alatca.test.en:2047/build_v3/download.php",  
 				data: { 'layout-v3': $('#download-layout').html() },  
 				success: function(data) { 
-					alert(data);
-					window.location.href = 'http://alatca.test:2047/build_v3/appmagazine.zip'; 
+					
+					window.location.href = 'http://alatca.test.en:2047/build_v3/appmagazine.zip'; 
 					
 					}
 			});
 		}
 		
 		function downloadHtmlLayout(){
-			alert('not dơn load');
+			
 			$.ajax({  
 				type: "POST",  
 				contentType: "application/x-www-form-urlencoded;charset=utf-8",
-				url: "http://alatca.test:2047/build_v3/download.php",  
+				url: "http://alatca.test.en:2047/build_v3/download.php",  
 				data: { 'layout-v3': $('#download-layout').html() },  
-				success: function(data) {alert(data); window.location.href = 'http://alatca.test:2047/build_v3/zip/index.html'; }
+				success: function(data) { window.location.href = 'http://alatca.test.en:2047/build_v3/zip/index.html'; }
 			});
 		}
 
@@ -343,7 +342,7 @@ $(document).ready(function() {
 	CKEDITOR.disableAutoInline = true;
 	restoreData();
 	var contenthandle = CKEDITOR.replace( 'contenteditor' ,{
-		language: 'vi',
+		language: 'en',
 		contentsCss: ['css/bootstrap-combined.min.css'],
 		allowedContent: true
 	});

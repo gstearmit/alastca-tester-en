@@ -1,3 +1,32 @@
+/*******************echo adv*********************************/
+.adv_alatca{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 125px;
+	background-color: rgba(0, 0, 0, 0.701961);
+	border-radius: 5px 5px 0px 0px;
+	text-align: center;
+	border: solid 1px rgba(255, 255, 255, 0.207843);
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.adv_alatca p { margin:0px 0px 3px 0px;}
+
+#google_image_div {
+text-align: center;
+margin-left: 21%;
+width: 100%;
+}
+#adv_goolge {
+text-align: center;
+}
+/********************end adv*******************************/
+
 .form-horizontal .form-group {
 margin-right: -15px;
 margin-left: -15px;
