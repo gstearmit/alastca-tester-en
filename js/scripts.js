@@ -395,6 +395,10 @@ $(document).ready(function() {
 	});
 	initContainer();
 	$('body.edit .demo').on("click","[data-target=#editorModal]",function(e) {
+	
+	      alert('hoang cong ophjuc');
+		return;
+		
 		e.preventDefault();
 		currenteditor = $(this).parent().parent().find('.view');
 		var eText = currenteditor.html();
