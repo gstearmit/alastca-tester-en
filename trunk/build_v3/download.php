@@ -72,16 +72,14 @@ $download_file= true;
 
 
 class FlxZipArchive extends ZipArchive {
-    /** Add a Dir with Files and Subdirs to the archive;;;;; @param string $location Real Location;;;;  @param string $name Name in Archive;;; @author Nicolas Heimann;;;; @access private  **/
-
+   
     public function addDir($location, $name) {
         $this->addEmptyDir($name);
 
         $this->addDirDo($location, $name);
      } // EO addDir;
 
-    /**  Add Files & Dirs to archive;;;; @param string $location Real Location;  @param string $name Name in Archive;;;;;; @author Nicolas Heimann
-     * @access private   **/
+   
     private function addDirDo($location, $name) {
         $name .= '/';
         $location .= '/';
@@ -120,6 +118,8 @@ if ($download_file)
     header("Content-Length: " . filesize($zip_file_name));
     readfile($zip_file_name);
     // remove zip file from temp path
+   // 
+    $download_file = false;
    // unlink($zip_file_name);
 
 }

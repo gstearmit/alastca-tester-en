@@ -49,8 +49,7 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="brand" href="#"><img src="img/favicon.png"><font>magazine
-						publishing</font></a>
+				<a class="brand" href="#"><img src="img/favicon.png"><font>magazine publishing</font></a>
 				<div class="nav-collapse collapse">
 					<ul class="nav" id="menu-layoutit">
 						<li class="divider-vertical"></li>
@@ -119,14 +118,19 @@
                 <div class="popover-content"><font>Setting Layout networks Grid of your here, the total defaults Grid up to 12, with the one value parse Chia cannot Gian col raster for each of, if you Cần more information, please accessible </font></font><a target="_blank" href="#"><font>systems networks Grid.</font></font></a></div>
               </div>
             </div>
-             --> <i class="icon-plus icon-white"></i><font>Layout
-								Colum</font>
+             --> <i class="icon-plus icon-white"></i><font>Layout Colum</font>
 						</li>
 						<li style="display: list-item;" class="rows" id="estRows">
 							<div class="lyrow ui-draggable">
 								<a href="#close" class="remove label label-important"><i
-									class="icon-remove icon-white"></i><font>Delete</font></a> <span
-									class="drag label"><i class="icon-move"></i><font>drag</font></span>
+									class="icon-remove icon-white"></i><font>Delete</font></a> 
+									<span class="drag label"><i class="icon-move"></i><font>drag</font></span>
+									<span class="configuration">
+										<button type="button" class="btn btn-mini"
+											data-target="#editorModal" role="button" data-toggle="modal">
+											<font>Edit content</font>
+										</button> 
+									</span>
 								<div class="preview">
 									<input value="12" type="text">
 								</div>
@@ -140,6 +144,12 @@
 								<a href="#close" class="remove label label-important"><i
 									class="icon-remove icon-white"></i><font>Delete</font></a> <span
 									class="drag label"><i class="icon-move"></i><font>drag</font></span>
+									<span class="configuration">
+										<button type="button" class="btn btn-mini"
+											data-target="#editorModal" role="button" data-toggle="modal">
+											<font>Edit content</font>
+										</button> 
+									</span>
 								<div class="preview">
 									<input value="6 6" type="text">
 								</div>
@@ -154,6 +164,12 @@
 								<a href="#close" class="remove label label-important"><i
 									class="icon-remove icon-white"></i><font>Delete</font></a> <span
 									class="drag label"><i class="icon-move"></i><font>drag</font></span>
+									<span class="configuration">
+										<button type="button" class="btn btn-mini"
+											data-target="#editorModal" role="button" data-toggle="modal">
+											<font>Edit content</font>
+										</button> 
+									</span>
 								<div class="preview">
 									<input value="8 4" type="text">
 								</div>
@@ -168,6 +184,12 @@
 								<a href="#close" class="remove label label-important"><i
 									class="icon-remove icon-white"></i><font>Delete</font></a> <span
 									class="drag label"><i class="icon-move"></i><font>drag</font></span>
+									<span class="configuration">
+										<button type="button" class="btn btn-mini"
+											data-target="#editorModal" role="button" data-toggle="modal">
+											<font>Edit content</font>
+										</button> 
+									</span>
 								<div class="preview">
 									<input value="4 4 4" type="text">
 								</div>
@@ -183,6 +205,12 @@
 								<a href="#close" class="remove label label-important"><i
 									class="icon-remove icon-white"></i><font>Delete</font></a> <span
 									class="drag label"><i class="icon-move"></i><font>drag</font></span>
+									<span class="configuration">
+										<button type="button" class="btn btn-mini"
+											data-target="#editorModal" role="button" data-toggle="modal">
+											<font>Edit content</font>
+										</button> 
+									</span>
 								<div class="preview">
 									<input value="2 6 4" type="text">
 								</div>
@@ -1839,10 +1867,57 @@
 						return false;
 					});
 		</script>
+		
+		
+		<div id="container"></div>
+		 <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.2.min.js"></script>
+    <script defer="defer">
+      var stage = new Kinetic.Stage({
+        container: 'container',
+        width: 578,
+        height: 200
+      });
+
+      var layer = new Kinetic.Layer();
+
+      var star = new Kinetic.Star({
+        innerRadius: 50,
+        outerRadius: 70,
+        fill: 'red',
+        stroke: 'black',
+        strokeWidth: 5,
+        numPoints: 20,
+        x: 200,
+        y: 100,
+        draggable: true,
+        shadowOffset: 5,
+        shadowColor: 'black',
+        shadowBlur: 5,
+        shadowOpacity: 0.5
+      });
+
+      layer.add(star);
+      stage.add(layer);
+
+      star.cache({
+        x: -100,
+        y: -100,
+        width: 200,
+        height: 200,
+        drawBorder: true
+      }).offset({
+        x: 100,
+        y: 100
+      });
+      
+      layer.draw();
+    </script>
+		
 	</div>
-	<!-- <div>
-<iframe src="http://datatrading.eu/topic/banner/news/728x90/travel728/travel728.php"></iframe>
-</div>  -->
+	
+
+
+   
 
 	<div class="adv_alatca">
 		<p>Alatca</p>
